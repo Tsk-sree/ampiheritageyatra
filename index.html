@@ -4,19 +4,64 @@
   <meta charset="UTF-8">
   <title>Hampi Heritage Yatra</title>
 
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Leaflet Map -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Open+Sans&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Hampi Heritage Yatra – Interactive Map</h1>
+<header>
+  <h1>Hampi Heritage Yatra</h1>
+  <p>Walk with History · An AI-powered Heritage Experience</p>
+</header>
 
-<div id="map"></div>
+<section id="map-section">
+  <h2>Interactive Heritage Map</h2>
+  <div id="map"></div>
+</section>
 
-<!-- Leaflet JS -->
+<section class="section">
+  <h2>AI Heritage Guide</h2>
+  <p class="center">
+    Ask questions about monuments, history, or plan your visit.
+  </p>
+  <div class="chatbox">
+    <p><b>Heritage Guide:</b> Welcome! Ask me about Hampi.</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Hampi Architecture Timeline</h2>
+  <ul class="timeline">
+    <li><b>7th Century</b> – Early temples such as Virupaksha</li>
+    <li><b>1336 CE</b> – Founding of Vijayanagara Empire</li>
+    <li><b>15th–16th Century</b> – Architectural peak</li>
+    <li><b>1565 CE</b> – Battle of Talikota & decline</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Contact & Feedback</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message / Feedback"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>
+    Designed by <b>T Sai Krishna Sree</b>, <b>Shubham Raj K</b>, <b>Avikshit B</b>, <b>Chirag Modalavasa</b><br>
+    7th Semester Electronics Students
+  </p>
+</footer>
+
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="script.js"></script>
-
 </body>
 </html>
